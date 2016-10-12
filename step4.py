@@ -11,13 +11,13 @@ arr=data.get("array")
 
 nw_arr=[]
 
-for i in arr:
-    if not i.startswith(pre):
-        nw_arr.append(i)
+for i, item in enumerate(arr):
+    if not item.startswith(pre):
+        nw_arr.append([item])
 
 print nw_arr
 # arrv=json.dumps(nw_arr, ensure_ascii=False)
-# print arrv
+# print arrv[1]
 
 
 # r = requests.post('http://challenge.code2040.org/api/prefix/validate', data = {'token':'38df9b96ac91674fd872c4d7c5438e24','array':arrv})
